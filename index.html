@@ -1,1 +1,36 @@
-My GitHub Page
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>CSS Components</title>
+<style>
+.frm {
+    display: inline-block;
+    border-radius: 7px;
+    border: 2px solid darkgray;
+    background: gray;
+    padding: 10px;
+}
+.frm.dark {
+    background: black;
+}
+.frm.light {
+    background: white;
+}
+</style>
+</head>
+<body>
+
+<link rel="stylesheet" type="text/css" href="src/magGlass.css" />
+<div class="frm">
+    <div class="mag-glass"><div class="lens"></div><div class="handle"></div></div>
+</div>
+
+<link rel="stylesheet" type="text/css" href="src/tapToTop.css" />
+<div class="frm">
+    See TapToTop component in fixed position on lower right.
+    <a id="tapToTop" href="#top" title="Top of page" class="shown">Top of page<span class="circumflex"><span class="bar"></span><span class="bar"></span></span></a>
+</div>
+
+</body>
+</html>
