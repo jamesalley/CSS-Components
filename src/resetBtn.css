@@ -1,0 +1,35 @@
+/**
+ *  Clear button X for resetting a form field.
+ */
+#resetBtn {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    overflow: hidden;
+    position: relative;
+    background: #c8c8c8;
+    padding: 0;
+    border: 0;
+    font-size: 0;
+    text-indent: -9999px;
+    -webkit-appearance: none;
+}
+    #resetBtn:active {
+        background: gray;
+    }
+    #resetBtn:before,
+    #resetBtn:after {
+        content: "";
+        width: 12px;
+        height: 2px;
+        background: white;
+        border-radius: 3px;
+        -webkit-transform-origin: 50%;
+        position: absolute; 
+        top: 9px;
+        left: 4px;
+        -webkit-transform: rotate(45deg);
+    }
+    #resetBtn:after {
+        -webkit-transform: rotate(-45deg);
+    }

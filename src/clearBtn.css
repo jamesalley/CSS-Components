@@ -1,0 +1,32 @@
+/**
+ *  Clear button X for resetting a form field.
+ */
+.clearBtn {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    background: #c8c8c8;
+}
+    .clearBtn:active {
+        background: gray;
+    }
+    .clearBtn input {
+        position: absolute;
+        left: -50px;
+    }
+    .clearBtn .bar {
+        width: 12px;
+        height: 2px;
+        background: white;
+        border-radius: 3px;
+        -webkit-transform-origin: 50%;
+        position: absolute; 
+        top: 9px;
+        left: 4px;
+        -webkit-transform: rotate(45deg);
+    }
+    .clearBtn .bar:first-child {
+        -webkit-transform: rotate(-45deg);
+    }
