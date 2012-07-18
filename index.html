@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>James Alley's CSS Components</title>
+<style>
+.frm {
+    border-radius: 7px;
+    border: 2px solid darkgray;
+    background: gray;
+    padding: 10px;
+    margin: 10px;
+    float: left;
+}
+.frm.dark {
+    background: black;
+}
+.frm.light {
+    background: white;
+}
+</style>
+<script src="http://yui.yahooapis.com/3.5.1/build/yui/yui-min.js"></script>
+<script>
+YUI().use('node', function (Y) {
+
+    if (Y.UA.ie > 0) {
+        Y.one('body').addClass('ie' + Y.UA.ie);
+    }
+    
+});​
+</script>
+</head>
+<body>
+
+<h1>CSS Components</h1>
+
+<p>These are 'built graphics' made entirely from CSS, no imgages. They are therefore resolution independent, scalable, lightweight, and Retina-display ready. Also, they are
+    more malleable than an image. You can easily tweak the colors, animation timing, etc. to suit your purpose.</p>
+
+<p>This collection continues to grow over time so <a href="https://github.com/jamesalley/CSS-Components">watch this project on Github</a>.</p>
+
+<link rel="stylesheet" type="text/css" href="src/magGlass.css" />
+<div class="frm">
+    <div class="mag-glass"><div class="lens"></div><div class="handle"></div></div>
+</div>
+
+<link rel="stylesheet" type="text/css" href="src/tapToTop.css" />
+<div class="frm">
+    See TapToTop component in fixed position on lower right.
+    <a id="tapToTop" href="#top" title="Top of page" class="shown">Top of page<span class="circumflex"><span class="bar"></span><span class="bar"></span></span></a>
+</div>
+
+<link rel="stylesheet" type="text/css" href="src/clearBtn.css" />
+<div class="frm">
+    <div class="clearBtn">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <input type="reset" value="Clear" />
+    </div>
+</div>
+
+<link rel="stylesheet" type="text/css" href="src/resetBtn.css" />
+<div class="frm">
+    <div role="button" arial-label="Reset" id="resetBtn"></div>
+</div>
+
+<link rel="stylesheet" type="text/css" href="src/cog.css" />
+<div class="frm light">
+    <div class="cog">
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="hub"></div>
+    </div>
+</div>
+
+<link rel="stylesheet" type="text/css" href="src/barberPole.css" />
+<div class="frm light">
+    <div class="barber-pole" role="progressbar"><div class="stripe-wrapper" aria-hidden="true"><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr></div></div>
+</div>
+
+</body>
+</html>

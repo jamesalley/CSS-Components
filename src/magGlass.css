@@ -1,0 +1,35 @@
+/**
+ *  Magnifying glass pseudo-icon element.
+ *  This could be used anywhere. Handy. 
+ *  Used in YSTRelated and in sbx.
+ *  This is about 419 characters minified, compared with over 1200 characters in Apple.com's 
+ *  data uri magGlass.
+ */
+.mag-glass {
+    color: white;
+    font-size: 0px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+    position: relative;
+}
+    .mag-glass .lens {
+        position: absolute;
+        border: 3px solid white;
+        width: 8px;
+        height: 8px;
+        background: transparent;
+        border-radius: 100px;
+    }
+    .mag-glass .handle {
+        position: absolute;
+        display: block;
+        border: 1px solid white;
+        background-color: white;
+        width: 6px;
+        height: 1px;
+        right: 0px;
+        bottom: 2px;
+        -webkit-transform: rotate(45deg);
+    }

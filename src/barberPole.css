@@ -1,0 +1,97 @@
+.barber-pole,
+.barber-pole * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.barber-pole {
+    width: 208px;
+    height: 13px;
+    border: 1px solid #6E92A3;   
+    overflow: hidden;    
+    white-space: nowrap;
+    position: relative;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0px 2px 2px rgba(0,0,0,.25);
+    -moz-box-shadow: inset 0px 2px 2px rgba(0,0,0,.25);
+    -ms-box-shadow: inset 0px 2px 2px rgba(0,0,0,.25);
+    box-shadow: inset 0px 2px 2px rgba(0,0,0,.25);
+}
+@-webkit-keyframes WEBKIT-BP {
+    0%   {
+        -webkit-transform: translate3D(-30px,0,0);
+    }
+    100% {
+        -webkit-transform: translate3D(-10px,0,0);
+    }
+}
+@-moz-keyframes MOZ-BP {
+    0%   {
+        -moz-transform: translateX(-30px);
+    }
+    100% {
+        -moz-transform: translateX(-10px);
+    }
+}
+@-ms-keyframes MS-BP {
+    0%   {
+        -ms-transform: translateX(-30px);
+    }
+    100% {
+        -ms-transform: translateX(-10px);
+    }
+}
+@-o-keyframes O-BP {
+    0%   {
+        -o-transform: translateX(-30px);
+    }
+    100% {
+        -o-transform: translateX(-10px);
+    }
+}
+@keyframes BP {
+    0%   {
+        transform: translateX(-30px);
+    }
+    100% {
+        transform: translateX(-10px);
+    }
+}
+.barber-pole .stripe-wrapper {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    white-space: nowrap;   
+    -webkit-animation: WEBKIT-BP .5s linear infinite;
+    -moz-animation: MOZ-BP .5s linear infinite;
+    -ms-animation: MS-BP .5s linear infinite;
+    -o-animation: O-BP .5s linear infinite;
+    animation: BP .5s linear infinite;
+}
+.barber-pole hr {
+    margin: 0;
+    display: inline-block;
+    margin-left: 10px;
+    width: 10px;
+    height: 20px;
+    background: #9FCBDA;
+    border: 1px solid #6E92A3;   
+    -webkit-transform: skew(-32deg);
+    -moz-transform: skewX(-32deg);
+    -ms-transform: skew(-32deg);
+    -o-transform: skew(-32deg);
+    transform: skew(-32deg);
+}
+.ie7 .barber-pole,
+.ie8 .barber-pole,
+.ie9 .barber-pole {
+    background: url(http://a.l.yimg.com/pv/i/us/sch/gr4/sp-BP2.gif);
+    border: 0;
+}
+.ie7 .barber-pole .stripe-wrapper,
+.ie8 .barber-pole .stripe-wrapper,
+.ie9 .barber-pole .stripe-wrapper {
+    display: none;
+}
+​
